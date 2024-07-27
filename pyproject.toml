@@ -39,3 +39,11 @@ pylint = "^3.2.6"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+
+[tool.ruff.lint]
+unfixable = ["F401"]
+
+[tool.ruff]
+extend-include = ["*.ipynb"]
+line-length = 100

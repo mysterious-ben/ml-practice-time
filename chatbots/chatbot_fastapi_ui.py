@@ -37,9 +37,9 @@ def chat(message: Message):
     return {"response": response, "history": chat_history}
 
 
+# To run: python chatbots/chatbot_fastapi_ui.py
+# To use: open index.html in your browser
 if __name__ == "__main__":
     import uvicorn
 
     uvicorn.run(app, host="0.0.0.0", port=8000)
-
-    # Open index.html in your browser

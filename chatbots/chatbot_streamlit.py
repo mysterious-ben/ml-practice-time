@@ -1,10 +1,12 @@
 import streamlit as st
 
 
-def always_agree(message, history):
+def always_agree(message: str, history: list) -> str:
     return "Agreed"
 
 
+# To run: streamlit run chatbots/chatbot_streamlit.py
+# Docs and examples: https://docs.streamlit.io/develop/tutorials/llms/build-conversational-apps
 if __name__ == "__main__":
     st.title("Your Smart AI Assistant")
 

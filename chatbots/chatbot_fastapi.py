@@ -28,9 +28,9 @@ def chat(message: Message):
     return {"response": response, "history": chat_history}
 
 
+# To run: python chatbots/chatbot_fastapi.py
+# To send a message: curl -X POST "http://127.0.0.1:8000/chat/" -H "Content-Type: application/json" -d '{"message": "Hello!"}'
 if __name__ == "__main__":
     import uvicorn
 
     uvicorn.run(app, host="0.0.0.0", port=8000)
-
-    # curl -X POST "http://127.0.0.1:8000/chat/" -H "Content-Type: application/json" -d '{"message": "Hello!"}'
