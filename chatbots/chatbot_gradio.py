@@ -1,6 +1,13 @@
 import gradio as gr
 
 
+# import os
+# from dotenv import load_dotenv
+# load_dotenv(verbose=True, override=True)
+# OPENAI_API_KEY = os.environ["OPENAI_API_KEY"]
+# assert OPENAI_API_KEY
+
+
 def always_agree(message: str, history: list) -> str:
     return "Agreed"
 
