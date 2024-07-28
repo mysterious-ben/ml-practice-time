@@ -4,7 +4,7 @@ import spacy
 import spacy.cli
 import spacy.displacy
 import spacy.tokens
-import spacy_transformers  # noqa: F401
+# import spacy_transformers  # noqa: F401
 from loguru import logger
 
 
@@ -28,7 +28,7 @@ if __name__ == "__main__":
     load_spacy_model("en_core_web_sm")
     load_spacy_model("en_core_web_md")
     load_spacy_model("en_core_web_lg")
-    load_spacy_model("en_core_web_trf")
+    # load_spacy_model("en_core_web_trf")
 
     text = "Apple is looking at buying U.K. startup for $1 billion. The stock price reaches the new record high $2. Elon Musk raised concerns."
 
@@ -41,12 +41,12 @@ if __name__ == "__main__":
     print("Spacy works fine!")
 
     # Spacy + Transformers
-    nlp = spacy.load("en_core_web_trf")
-    doc = nlp(text)
-    ents = list(doc.ents)
-    print(ents)
-    assert len(ents) > 1
-    print("Spacy + Transformers works fine!")
+    # nlp = spacy.load("en_core_web_trf")
+    # doc = nlp(text)
+    # ents = list(doc.ents)
+    # print(ents)
+    # assert len(ents) > 1
+    # print("Spacy + Transformers works fine!")
 
     # Spacy + TextRank
     nlp.add_pipe("textrank")

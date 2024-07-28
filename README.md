@@ -19,3 +19,5 @@ Run...
 
 - `keywords/` - entity and keyword extraction from text
 - `chatbots/` - chatbot examples
+
+Files named `answers_...` contain solutions to the tasks.
