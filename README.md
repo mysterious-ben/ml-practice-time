@@ -15,6 +15,8 @@ Run...
 - `poetry run python test_keywords.py`
 - `poetry run python test_chatbots.py`
 
+**Warning:** `spacy-transformers` (used for the model `"en_core_web_trf"`) and `keybert` may cause dependency conflicts related to `torch` libraries. If this happen, disable these libraries or google for a solution.
+
 ## Project Struccture
 
 - `keywords/` - entity and keyword extraction from text
